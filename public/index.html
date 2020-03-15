@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shortUrlApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+    <script src="./app.js"></script>
+    <title>URL Shortened</title>
+</head>
+<body class="text-center" style="background-color: #faf8e8;">
+    <header style="font-size: larger; margin: 10px; font-style: italic; text-decoration-line: underline;">ULR SHORTENER</header>
+    <div style="margin-top: 50px;">
+        <h3>Project from <a href="https://www.freecodecamp.org" target="blank">FREE CODE CAMP</a></h3>
+    <section style="margin-top: 25px;" ng-controller="urlCtrl">
+        <input type="text" id="input" placeholder="Enter Url to Shorten" ng-model="urlToShorten">
+        <a class="btn btn-primary" ng-href="/api/shorturl/new/{{urlToShorten}}">Get Short URL</a>
+    </section>
+        <h5 style="margin-top: 50px;"><strong>Technologies used</strong>: Node, Express, Mongoose, MongoDB, JavaScript, HTML, CSS, Angular</h5>
+    </div>
+</body>
+<footer style="margin-top: 50px;">By Mohd Zeefan, <a href="https://github.com/Necrocraft" target="blank" style="text-decoration-line: underline;">Github Profile</a></footer>
+</html>
